@@ -52,6 +52,8 @@ function Tabs(props) {
   return (
     <div className="container">
       <h1 className='recipeHeading'>What would you like to have!</h1>
+
+       {/* Tab labels */}
       <div className="tabs">
         {tabLabel.map((item, index) => (
           <div
@@ -67,6 +69,8 @@ function Tabs(props) {
           </div>
         ))}
       </div>
+
+      {/* Recipe banner */}
       <div className='recipe_banner'>
         {tabData !== '' && tabData.recipe && (
           <>

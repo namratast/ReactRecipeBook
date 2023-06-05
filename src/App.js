@@ -11,9 +11,16 @@ function App() {
   
   return (
     <div className="main">
+      {/* Header component */}
       <Header />
+
+       {/* Tabs component */}
       <Tabs setLoader={setLoader} />
+
+      {/* RecipeLists component */}
       <RecipeLists setLoader={setLoader} />
+
+      {/* Loader */}
       {loader && <div className='loader'>
         <div className='spinner'>
         </div>
